@@ -3,6 +3,7 @@ require('dotenv').config();
 const env = process.env.NODE_ENV;
 
 //Start-Development Environment Config
+const dev = {}
 const prod = {
   app: {
     port: parseInt(process.env.PROD_APP_PORT) || 443
