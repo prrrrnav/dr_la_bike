@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Dr. LaBike</title>
+  <!--<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
+  <!--<link href="/css/style.css" rel="stylesheet" type="text/css" />-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: #FFF;font-family: Arial, Helvetica, sans-serif;">
+
+  <div class="container" style="border: 1px solid black;height:100%;">
+    <!--header start-->
+    <table style="width:100%;">
+      <tr>
+        <td style="width: 98%;">
+          <div style="background-color: #FFF;">
+            <div style="font-size: 14px;font-weight:bold;margin-left:2px;float: left;color: #27D2C1;"><img
+                src="https://sisgain.com/project/la_bike_api/uploads/template_logo/logo4.png" style="height:65px">
+              <p>Bharat Ki Phele Pasand</p>
+              <div
+                style=" background-color: #2faaab; border: none;color: white; padding: 3px 2px; font-size: 11px; cursor: pointer; display: block; border-radius: 8px;">
+                <i class="fa fa-phone-square" aria-hidden="true"></i> Health Line No. 9899999999</div>
+            </div>
+            <div class="ad-block">
+
+            </div>
+          </div>
+        </td>
+        <td style="width:98%;">
+          <div style="margin-top:-2px;margin-right:-3px">
+            <img src="https://sisgain.com/project/la_bike_api/uploads/template_logo/curve3.svg">
+          </div>
+        </td>
+      </tr>
+    </table>
+    <!--<div class="row">-->
+    <!--   	<div class="col-sm-7">-->
+    <!--       	<div class="header" style="background-color: #FFF;padding: 5px;">            		-->
+    <!--           			<div class="logo" style="font-size: 18px;font-weight:bold; margin: 20px;float: left;color: #27D2C1;"><img src="https://sisgain.com/project/la_bike_api/uploads/template_logo/logo4.png">-->
+    <!--					<p>Bharat Ki Phele Pasand</p>-->
+    <!--					<div class="help" style=" background-color: #2faaab; border: none;color: white; padding: 5px 10px; font-size: 16px; cursor: pointer; display: block; border-radius: 10px;"><i class="fa fa-phone-square" aria-hidden="true"></i> Health Line No. 9899999999</div>-->
+    <!--					</div>-->
+    <!--               		<div class="ad-block">-->
+
+    <!--					</div>            	-->
+    <!--           </div>-->
+    <!--       </div>-->
+
+    <!--	<div class="col-sm-5">-->
+    <!--	<div class ="curve">-->
+    <!--	<img src="https://sisgain.com/project/la_bike_api/uploads/template_logo/curve3.svg" >-->
+    <!--	</div>-->
+    <!--	</div>-->
+    <!--   </div>-->
+
+    <!--header End-->
+
+    <!--content-->
+    <!--<div class="row">-->
+
+
+
+    <!--</div>-->
+    <table style="width:100%;padding: 6% 15% 0 15%;">
+      <tr>
+        <td style="font-size: 18px;color: #1F3F77;font-weight: 600;line-height: 30px;">{{pdfdata.d_name}}</td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;color: #1F3F77;font-size: 14px;font-weight:500; line-height: 24px;">
+          {{pdfdata.speciality}}</td>
+        <td style="float: right;vertical-align: top">
+          <!--<img src="https://sisgain.com/project/la_bike_api/uploads/template_logo/final%20logo.png"  width="100" height="30"></td>-->
+      </tr>
+      <tr>
+        <td style="vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+            width="15" height="13">
+          {{pdfdata.d_phone}}</td>
+        </td>
+        <td style="float: right;vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;">
+          {{pdfdata.h_name}}</td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;"><img
+            src="https://img.favpng.com/16/20/17/computer-icons-gmail-email-bansdroni-hridhi-outlook-com-png-favpng-JvZJhYYBA08V0fTPMVFh5mdv9.jpg"
+            width="15" height="13"> {{pdfdata.d_email}}</td>
+        <td style="float: right;vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;">
+          {{pdfdata.h_phone}}</td>
+      </tr>
+      <tr>
+        <!--<td style="vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;">CED. Port :{{pdfdata.certficate}}</td>-->
+        <td style="vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;float: right;">
+          {{pdfdata.h_address}}</td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;">
+          {{pdfdata.d_instute}}</td>
+        <td style="vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;float: right;">
+          {{pdfdata.h_city}}{{pdfdata.h_state}}</td>
+      </tr>
+    </table>
+    <table style="width: 100%;background-color: #2faaab;;padding: 0.5% 14.5% 0.5% 15.5%;color: #ffffff;margin: 0px;">
+      <tr>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;">Patient: {{pdfdata.p_name}}
+        </td>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;float: right;">Date:
+          {{pdfdata.date}}</td>
+      </tr>
+
+    </table>
+    <table
+      style="width:100%;padding: 1% 15% 0 15%;vertical-align: top;font-size: 12px;font-weight:500;line-height: 40px;color: #474A57;">
+      <tr>
+        <td>Age <input type="text" id="fname" name="fname"
+            style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 70%;text-align: center;"
+            value="{{pdfdata.p_age}}"></td>
+        <td>Sex <input type="text" id="fname" name="fname"
+            style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 70%;text-align: center;"
+            value="{{pdfdata.p_gender}}"></td>
+        <td>HT. <input type="text" id="fname" name="fname"
+            style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 70%;text-align: center;"
+            value="{{pdfdata.height}}"></td>
+        <td style="float: right;">WT. <input type="text" id="fname" name="fname"
+            style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 70%;text-align: center;"
+            value="{{pdfdata.weight}}"></td>
+      </tr>
+      <tr>
+        <td>DOB <input type="text" id="fname" name="fname"
+            style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 67%;text-align: center;"
+            value="{{pdfdata.p_dob}}"></td>
+        <td>Temp <input type="text" id="fname" name="fname"
+            style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 67%;text-align: center;"
+            value="{{pdfdata.temp}}"></td>
+        <td>P.A. <input type="text" id="fname" name="fname"
+            style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 72%;text-align: center;"
+            value="{{pdfdata.bp}}"></td>
+        <td style="float: right;">IMC <input type="text" id="fname" name="fname"
+            style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 70%;text-align: center;"
+            value="{{pdfdata.imc}}"></td>
+      </tr>
+    </table>
+    <table style="width:100%;padding: 1% 15% 0 15%;color: #474A57;">
+      <tr>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;">Tel# <input type="text"
+            id="fname" name="fname"
+            style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 85%;text-align: center;"
+            value="{{pdfdata.p_phone}}"></td>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;">Email <input type="text"
+            id="fname" name="fname"
+            style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 85%;text-align: center;"
+            value="{{pdfdata.d_email}}"></td>
+        <!-- <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;float: right;">Email <input type="text" id="fname" name="fname" style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 85%;"></td> -->
+      </tr>
+    </table>
+    <table style="width:100%;padding: 1% 15% 0 15%;color: #474A57;">
+      <tr>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;">Allergies and previous
+          conditions </td>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;float:right">Clinical Diagnosis
+        </td>
+      </tr>
+      <tr>
+        <td><input type="text" id="fname" name="fname"
+            style="height: 60px;border-radius: 10px;border: 1px solid #6f6e6e;width: 98%;text-align: center;font-size: 12px;font-weight:500;line-height: 16px;"
+            value="{{pdfdata.conditions_previous}}"></td>
+        <td><input type="text" id="fname" name="fname"
+            style="height: 60px;border-radius: 10px;border: 1px solid #6f6e6e;width: 98%;text-align: center;font-size: 12px;font-weight:500;line-height: 16px;"
+            value="{{pdfdata.diagnostic}}"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;">Medications </td>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;float: right;"></td>
+      </tr>
+    </table>
+    <table style="width:100%;padding: 1% 15% 0 15%;">
+
+      {{#each pdfdata.medicine}}
+      <tr>
+        <td
+          style="border: 1px solid #6f6e6e;height: 40px;font-size: 12px;font-weight:500;line-height: 16px;width:50%;border-radius:10px 0px 0px 10px;">
+          {{this.drugName}}
+        </td>
+        <td
+          style="border: 1px solid #6f6e6e;height: 40px;font-size: 12px;font-weight:500;line-height: 16px;width:50%;border-radius:0px 10px 10px 0px;">
+          Mor -{{this.morning}}, Aft -{{this.afternone}}, Eve -{{this.evening}},
+          Night-{{this.night}}<br />({{this.meal}})--{{this.days}} {{this.start_time}}<br />
+          {{this.note}}</td>
+      </tr>
+      {{/each}}
+      <tr>
+        <td
+          style="border: 1px solid #6f6e6e;height: 40px;font-size: 12px;font-weight:500;line-height: 16px;border-radius:10px 0px 0px 10px;">
+        </td>
+        <td
+          style="border: 1px solid #6f6e6e;height: 40px;font-size: 12px;font-weight:500;line-height: 16px;border-radius:0px 10px 10px 0px;">
+        </td>
+      </tr>
+    </table>
+    <table style="width:100%;padding: 1% 15% 0 15%;">
+      <tr>
+        <td> <input type="text" id="fname" name="fname"
+            style="height: 60px;border-radius: 10px;border: 1px solid #6f6e6e;width: 90%;text-align: center;font-size: 12px;font-weight:500;line-height: 16px;"
+            value="{{pdfdata.indications_and_notes}}"></td>
+        <td> <input type="text" id="fname" name="fname"
+            style="height: 60px;border-radius: 10px;border: 1px solid #6f6e6e;width: 98%;"></td>
+        <!--<td rowspan="2"> <img src="https://sisgain.com/project/la_bike_api/uploads/template_logo/final%20logo.png"  width="97" height="75"></td>-->
+      </tr>
+      <tr>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;">Diagnosis Test: </td>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;float: right;">signature: </td>
+      </tr>
+    </table>
+    <!--sidebar image-->
+    <div class="row">
+      <table>
+        <tr>
+          <td style=" margin-left: -3px;position: absolute;margin-top: -33.5%;z-index: 2;">
+            <img src="https://sisgain.com/project/la_bike_api/uploads/template_logo/sidebar.svg" height="350">
+          </td>
+        </tr>
+      </table>
+      <!--<div class ="col-sm-12">-->
+      <!--<div class ="sidebar" style=" margin-left: -13px;position: absolute;margin-top: -21.5%;z-index: 2;">-->
+      <!--<img src="https://sisgain.com/project/la_bike_api/uploads/template_logo/sidebar.svg" height = "350" >-->
+      <!--</div>-->
+      <!--</div>-->
+    </div>
+
+
+    <!--footer start-->
+    <div class="row" style="margin-top:20px">
+      <div class="col-sm-12">
+        <div style="background-color: #FFF;color: #A5A5A5;text-align: center;line-height:3px;align-items: center;">
+          <div style="color: #A5A5A5;text-align: center;	padding-left: 60px;padding-right: 20px;align-items: center;">
+            <h4 style="color:red;">Dr. LaBike IS A UNIT OF MY FAMILY FIRST</h4>
+            <h6 style="color:black;font-size:10px;">My Family First Healthect Pvt Ltd.,Plot no 453,Sec-19,Opposite PNB
+              Building, Dwarka -110045,Delhi</h6>
+            <p style="color:black;font-size:10px;">care@myfamilyfirst.in | www.myfamilyfirst.in | CIN:123456789</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer end--->
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <mate charest="utf-8" />
+    <title>Prescription Pdf</title>
+  </head>
+  <body style="font-family:Poppins;font-style: normal;"  >
+<table style="width:100%;padding: 6% 15% 0 15%;" >
+  <tr>
+    <td  style="font-size: 18px;color: #1F3F77;font-weight: 600;line-height: 30px;">{{pdfdata.d_name}}</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;color: #1F3F77;font-size: 14px;font-weight:500; line-height: 24px;">{{pdfdata.speciality}}</td>
+    <td  style="float: right;vertical-align: top">
+        <img src="https://sisgain.com/project/la_bike_api/uploads/template_logo/final%20logo.png"  width="100" height="30"></td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"  width="15" height="13">
+       +91{{pdfdata.d_phone}}</td></td>
+    <td style="float: right;vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;">{{pdfdata.h_name}}</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;"><img src="https://img.favpng.com/16/20/17/computer-icons-gmail-email-bansdroni-hridhi-outlook-com-png-favpng-JvZJhYYBA08V0fTPMVFh5mdv9.jpg"  width="15" height="13"> {{pdfdata.d_email}}</td>
+    <td style="float: right;vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;">Tel: +91{{pdfdata.h_phone}}</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;">CED. Port :{{pdfdata.certficate}}</td>
+    <td style="vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;float: right;">{{pdfdata.h_address}}</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;">{{pdfdata.d_instute}}</td>
+    <td style="vertical-align: top;color: #1F3F77;font-size: 12px;font-weight:500;line-height: 16px;float: right;">{{pdfdata.h_city}}{{pdfdata.h_state}}</td>
+  </tr>
+</table>
+<table style="width: 100%;background-color: #6790D7;padding: 0.5% 15.5% 0.5% 14.5%;color: #ffffff;margin: 10px;" >
+  <tr>
+    <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;">Paciente: {{pdfdata.p_name}}</td>
+    <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;float: right;">Fecha: {{pdfdata.date}}</td>
+  </tr>
+
+</table>
+<table style="width:100%;padding: 1% 15% 0 15%;vertical-align: top;font-size: 12px;font-weight:500;line-height: 40px;color: #474A57;">
+  <tr>
+    <td>Edad  <input type="text" id="fname" name="fname" style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 70%;text-align: center;" value="{{pdfdata.p_age}}"></td>
+    <td >Sexo <input type="text" id="fname" name="fname" style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 70%;text-align: center;" value="{{pdfdata.p_gender}}"></td>
+    <td>Talla <input type="text" id="fname" name="fname" style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 70%;text-align: center;" value="{{pdfdata.height}}"></td>
+    <td style="float: right;">Peso <input type="text" id="fname" name="fname" style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 70%;text-align: center;" value="{{pdfdata.weight}}" ></td>
+  </tr>
+  <tr>
+    <td>F.Nac.  <input type="text" id="fname" name="fname" style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 67%;text-align: center;" value="{{pdfdata.p_dob}}"></td>
+    <td >Temp <input type="text" id="fname" name="fname" style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 67%;text-align: center;" value="{{pdfdata.temp}}"></td>
+    <td>P.A. <input type="text" id="fname" name="fname" style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 72%;text-align: center;" value="{{pdfdata.bp}}"></td>
+    <td style="float: right;">IMC <input type="text" id="fname" name="fname" style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 70%;text-align: center;" value="{{pdfdata.imc}}"></td>
+  </tr>
+</table>
+<table style="width:100%;padding: 1% 15% 0 15%;color: #474A57;" >
+    <tr>
+      <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;">Tel#  <input type="text" id="fname" name="fname" style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 85%;text-align: center;" value="{{pdfdata.p_phone}}"></td>
+      <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;">Email  <input type="text" id="fname" name="fname" style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 85%;text-align: center;" value="{{pdfdata.d_email}}"></td>
+      <!-- <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;float: right;">Email <input type="text" id="fname" name="fname" style="height: 25px;border-radius: 10px;border: 1px solid #6f6e6e;width: 85%;"></td> -->
+    </tr>
+  </table>
+  <table style="width:100%;padding: 1% 15% 0 15%;color: #474A57;" >
+    <tr>
+      <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;">Alergias y condiciones previous  </td>
+      <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;float:right">Diagnostico </td>
+    </tr>
+    <tr>
+        <td ><input type="text" id="fname" name="fname" style="height: 60px;border-radius: 10px;border: 1px solid #6f6e6e;width: 98%;text-align: center;font-size: 12px;font-weight:500;line-height: 16px;" value="{{pdfdata.conditions_previous}}"></td>
+        <td ><input type="text" id="fname" name="fname" style="height: 60px;border-radius: 10px;border: 1px solid #6f6e6e;width: 98%;text-align: center;font-size: 12px;font-weight:500;line-height: 16px;" value="{{pdfdata.diagnostic}}"></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;">Medicamentos </td>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;float: right;">Tratamiento</td>
+      </tr>
+  </table>
+  <table style="width:100%;padding: 1% 15% 0 15%;" >
+
+      {{#each pdfdata.medicine}}
+       <tr>
+      <td style="border: 1px solid #6f6e6e;height: 40px;font-size: 12px;font-weight:500;line-height: 16px;width:50%;border-radius:10px 0px 0px 10px;">{{this.drugName}}
+      </td>
+       <td style="border: 1px solid #6f6e6e;height: 40px;font-size: 12px;font-weight:500;line-height: 16px;width:50%;border-radius:0px 10px 10px 0px;">Mor -{{this.morning}}, Aft -{{this.afternone}}, Eve -{{this.evening}}, Night-{{this.night}}<br />({{this.meal}})--{{this.days}} {{this.start_time}}<br />
+      {{this.note}}</td>
+      </tr>
+      {{/each}}
+     <tr>
+      <td style="border: 1px solid #6f6e6e;height: 40px;font-size: 12px;font-weight:500;line-height: 16px;border-radius:10px 0px 0px 10px;"></td>
+       <td style="border: 1px solid #6f6e6e;height: 40px;font-size: 12px;font-weight:500;line-height: 16px;border-radius:0px 10px 10px 0px;"></td>
+      </tr>
+    </table>
+  <!--  <table style="width:100%;padding: 1% 15% 0 15%;" >-->
+  <!--  <tr>-->
+  <!--    <td style="border: 1px solid #6f6e6e;border-radius: 10px;">-->
+  <!--        <table style="width:100%">-->
+             
+  <!--    {{#each pdfdata.medicine}}-->
+  <!--     <tr>-->
+  <!--    <td style="border-bottom: 1px solid #6f6e6e;height: 40px;font-size: 12px;font-weight:500;line-height: 16px">{{this.name}}</td>-->
+  <!--    </tr>-->
+  <!--    {{/each}}-->
+  <!--   <tr>-->
+  <!--    <td style="border-bottom: 1px solid #6f6e6e;height: 40px;font-size: 12px;font-weight:500;line-height: 16px"></td>-->
+  <!--    </tr>-->
+              
+  <!--        </table>    </td>-->
+  <!--    <td style="border: 1px solid #6f6e6e;border-radius: 10px;"> <table style="width:100%">-->
+             
+  <!--    {{#each pdfdata.treatment}}-->
+  <!--     <tr>-->
+  <!--    <td style="border-bottom: 1px solid #6f6e6e;height: 40px;font-size: 12px;font-weight:500;line-height: 16px">{{this.name}}</td>-->
+  <!--    </tr>-->
+  <!--    {{/each}}-->
+  <!--  <tr>-->
+  <!--    <td style="border-bottom: 1px solid #6f6e6e;height: 40px;font-size: 12px;font-weight:500;line-height: 16px"></td>-->
+  <!--    </tr>-->
+              
+  <!--        </table> </td>-->
+  <!--  </tr>-->
+  <!--</table>-->
+  <table style="width:100%;padding: 1% 15% 0 15%;" >
+    <tr>
+      <td >  <input type="text" id="fname" name="fname" style="height: 60px;border-radius: 10px;border: 1px solid #6f6e6e;width: 90%;text-align: center;font-size: 12px;font-weight:500;line-height: 16px;" value="{{pdfdata.indications_and_notes}}"></td>
+      <td> <input type="text" id="fname" name="fname" style="height: 60px;border-radius: 10px;border: 1px solid #6f6e6e;width: 98%;" ></td>
+      <td rowspan="2"> <img src="https://sisgain.com/project/la_bike_api/uploads/template_logo/final%20logo.png"  width="97" height="75"></td>
+    </tr>
+    <tr>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;">Indicaciones y notes:  </td>
+        <td style="vertical-align: top;font-size: 12px;font-weight:500;line-height: 16px;float: right;">Firma de autorizacion: </td>
+      </tr>
+  </table>
+    <!-- <ul>
+      {{#each users}}
+      <li>Name: {{this.name}}</li>
+      <li>Age: {{this.age}}</li>
+      <br />
+      {{/each}}
+    </ul> -->
+  </body>
+</html>

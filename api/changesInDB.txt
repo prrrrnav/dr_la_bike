@@ -1,0 +1,16 @@
+Table - users
+	Dropped columns
+		- time_off
+		- in_clinic_consultation
+	Altered columns
+		- video_consultation -> availability
+		- hospital_id -> camp_id
+
+Table - hospital_lists
+		- Rename hospital_lists to camp_lists
+	Altered columns
+		- hospital_name -> camp_name
+		- hospital_id -> camp_id
+		- hospital_type -> camp_type
+
+Pagination offset limits, different status code
